@@ -1,0 +1,66 @@
+footer{
+    padding:  5% 7%;
+    color: gray;
+    opacity: 0.4;
+
+    .bar{
+    margin: 10% 0;
+    width: 100%;
+    opacity: 0.4;
+    border-top: 2px solid gray;
+}
+
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    @include sp{
+        height: 100px;
+        flex-direction: column-reverse;
+        .margin{
+            width: 100%;
+        }
+
+    }
+}
+
+    .footer-wrap2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 32px;
+        .icon-wrap{
+            color: black;
+            opacity: 1;
+        }
+        @include sp{
+            font-size: 16px;
+            justify-content: none;
+        }
+        
+        h1, i{
+            margin-right: 20px;
+            @include sp{
+
+            }
+        }
+    }
+
+    p{
+        border: 2px solid black;
+        color: black;
+        font-size: 32px;
+        @include pc{
+            .margin{
+                display: none;
+            }
+        }
+        @include sp{
+            width: 150px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 auto;
+
+        }
+    }
+
+    
+}
